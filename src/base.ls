@@ -26,10 +26,11 @@ httpServer = http.createServer (request, response) ->
             headers."Content-Encoding" = "gzip"
             response.writeHead 200, "ok", headers
             (err, compressed) <~ zlib.gzip data
-            headers."Content-Length" = compressed.length
             d_chunk1 = compressed.slice 0, first_chunk
             d_chunk2 = compressed.slice first_chunk
-            response.end compressed
+            response.write d_chunk1
+            <~ process.nextTick
+            response.end d_chunk2
         else
             headers."Content-Length" = data.length
             response.writeHead 200, "ok", headers

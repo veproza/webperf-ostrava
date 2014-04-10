@@ -12,19 +12,6 @@
             <link rel="stylesheet" href="./style1.css">
             <link rel="stylesheet" href="./style2.css">
         </noscript>
-        <script>
-        setTimeout(function() {
-            var h = document.getElementsByTagName('head')[0];
-            var ss1 = document.createElement("link");
-            ss1.rel = "stylesheet";
-            ss1.href = "./style1.css";
-            var ss2 = document.createElement("link");
-            ss2.rel = "stylesheet";
-            ss2.href = "./style2.css";
-            h.appendChild(ss1);
-            h.appendChild(ss2);
-        }, 150);
-        </script>
         <script>t.push(Date.now() - t0)</script>
     </head>
     <body>
@@ -42,6 +29,20 @@
             Vivamus sed rutrum massa. Morbi imperdiet mauris interdum nibh bibendum, at blandit leo ornare. Phasellus ultricies risus quis nisi accumsan, at imperdiet erat pharetra. Aliquam rutrum sollicitudin libero, sed sodales lorem tempus sed. Aliquam tempor nunc et lacinia egestas. Maecenas faucibus ac dui eu sodales. In hac habitasse platea dictumst. Praesent gravida vestibulum nibh, a porttitor sem blandit ut.
             </p>
             <script>t.push(Date.now() - t0)</script>
+            <script>
+            setTimeout(function() {
+                var h = document.getElementsByTagName('head')[0];
+                var ss1 = document.createElement("link");
+                ss1.rel = "stylesheet";
+                ss1.href = "./style1.css";
+                var ss2 = document.createElement("link");
+                ss2.rel = "stylesheet";
+                ss2.href = "./style2.css";
+                h.appendChild(ss1);
+                h.appendChild(ss2);
+            }, 1);
+            </script>
+
             <p>
             Suspendisse semper adipiscing est vitae dapibus. Proin fringilla augue ut sapien dictum venenatis. Donec mattis dui tempor, iaculis tellus eget, ultricies elit. Aliquam dignissim orci eros, dapibus sodales orci porttitor malesuada. Sed vitae cursus nulla. Mauris tempus imperdiet nibh in varius. Quisque fringilla bibendum purus, eget blandit lacus facilisis eu. Praesent vel rhoncus orci. Suspendisse tincidunt orci vitae justo ornare viverra. Ut posuere mattis eros, a venenatis eros vulputate ac. Curabitur sollicitudin a lacus interdum tempor. Vestibulum adipiscing consequat turpis eu suscipit. In non justo iaculis, lobortis purus eget, ultricies nisi.
             </p>

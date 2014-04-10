@@ -2,6 +2,7 @@ require! {
     http
     fs
     mime
+    zlib
 }
 first_chunk = 11680_bytes
 httpServer = http.createServer (request, response) ->
@@ -19,15 +20,19 @@ httpServer = http.createServer (request, response) ->
                 "Pragma": "no-cache"
                 "Content-Type": mime.lookup request.url
             if data.length > first_chunk
-                d_chunk1 = data.slice 0, first_chunk
-                d_chunk2 = data.slice first_chunk
+                headers."Content-Encoding" = "gzip"
+                response.writeHead 200, "ok", headers
+                (err, compressed) <~ zlib.gzip data
+                console.log compressed.length, first_chunk
+                d_chunk1 = compressed.slice 0, first_chunk
+                d_chunk2 = compressed.slice first_chunk
                 console.log "Chunk 1"
                 response.write d_chunk1
                 <~ setTimeout _, 2000
                 console.log "Chunk 2"
                 response.end d_chunk2
             else
-                headers."Content-Length": data.length
+                headers."Content-Length" = data.length
                 response.writeHead 200, "ok", headers
                 response.end data
     request.resume!

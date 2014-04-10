@@ -1,3 +1,602 @@
 body {
-    background: yellow;
+    background: green;
 }
+/*
+
+/* Zachovej @import radky na prvnim miste v souboru
+@import url("lytebox0.css");
+@import url("jquery.jscrollpane.css");
+/* Zachovej @import radky na prvnim miste v souboru
+
+.pngfix2 { behavior: url(/css/11/iepngfix.htc) }
+.thumb-title { height: 17px; overflow: hidden }
+BODY { behavior: url("/css/11/csshover.htc"); color: #202020; font-size: 80%; font-family: Arial, Helvetica, sans-serif; background: #FFFFFF url("/img/11_0/bg1.gif") repeat-y top center; margin: 0; padding: 0; }
+
+/* TODO: unify order of same rules in all files!
+#menu3 { z-index: 50; }
+#menu3 A.submenu { display: none; }
+#submenu { z-index: 2; display: none; padding: 0; background: white; border: 1px solid #AFAFAF; sborder-top: 0; swidth: 127px; position: absolute; left: 0; top: 0; }
+#submenu #sm-b { border-bottom: 1px solid #AFAFAF; }
+#submenu A.submenu { margin: 10px 0 0 0!important; display: block; color: #CA76AA!important; float: none; text-transform: none; }
+/* // TODO: see above
+
+FORM, UL, IMG { margin: 0; padding: 0; border: 0; }
+P, LI { margin: 0 0 5px 0; }
+UL { margin-left: 22px; text-align: left;   list-style-type: circle; color: #D2D2D2; list-style-image: url("/img/11_0/circle.png"); *list-style-image: url("/img/11_0/circle_IE.png")}
+LI SPAN { color: #BCBCBC; font-size: 0.85em; }
+
+A, A:visited { color: #202020; text-decoration: none; }
+A:hover { text-decoration: underline }
+A.m, A.m:visited, LI A, LI A:visited { color: #004A8F; }
+
+A.next, A.next:visited  { font: 13px Arial!important; color: #174F82; }
+A.ablue, A.ablue:visited { color: #316187; }
+
+A.more          { width: auto; height:15px; float: right; padding: 0 12px 0 7px; text-decoration: none; color: white!important; font: bold 11px/15px Arial; background: url("/img/11_0/sipka_vice_akce.png") no-repeat top right;  display: block; margin: -5px 0 0 0 }
+.align-right { text-align: right; }
+.hidden { display: none; }
+
+/* Kostra ####
+
+#mereni { position: absolute; left: 0px; top: 0px; }
+
+#ihned, #main { width: 1000px; height: auto; clear: both; background: white; overflow: hidden }
+#ihned { margin: 0 auto; text-align: left; position: relative }
+#main  { border-bottom: 20px solid white;  }
+
+.col12 { clear: left; float: left; width: 681px; height: auto;  padding: 0 19px 0 0}
+.col3 { float: right; width: 300px; height: auto; _overflow: hidden }
+
+#map { padding: 8px 45px; background-color: #F2F2F2; border-bottom: 1px solid #ACACAC; }
+#map SPAN { width: 110px; font-weight: bold; display: block; float: left; }
+
+#copy { padding: 8px 0; background-color: #3C7AB3; border-top: 1px solid white; color: white; text-align: center; }
+#copy A, #copy A:visited, #copy A:hover { color: white; }
+
+/* Reklama ####
+.reklama TABLE, .reklama DIV    { margin: auto; }
+#r-leader, #r-leader-b  { display: none; width: 1000px; height: auto; clear: both; margin: auto; text-align: left; background-color: white; position: relative; }
+#r-leader .reklama  { text-align: center; width: 1020px; margin-left: -10px; position: relative;
+            /*ie6 _margin-left: 0px; _left: -10px; _display: inline; _position: static; }
+#r-leader-b .reklama    { text-align: center; padding-bottom: 20px; }
+/*#r-full       { display: none; width: 468px; text-align: right; float: right; margin: 6px 0 0 0; padding-left: 10px;
+            background: url("/img/11_0/0/0_hp09/reklama.gif') no-repeat 0% 5%; }
+#r-sfull    { display: none; width: 693px; clear: both; margin-top: 10px; margin-bottom: 20px; text-align: center; float: left; _float: none; }
+#r-bfull    { display: none; width: 634px; clear: both; text-align: center; background: white; border: 1px solid #D0D0D0; margin: 19px 0 19px 26px; padding: 10px 0  }
+#r-bfull-mini   { width: 412px; clear: both; text-align: center; margin: -8px 0 0 26px; float: left;  _display: inline }
+#r-rectan-d { display: none; width: 550px; }
+#r-big      { display: none; width: 300px; margin: 0 0 20px 0; float: left; text-align: center; _float: none; clear: both }
+#r-extrabig     { display: none; width: 300px; margin: 2px 0 0 0; clear: both; float: left; text-align: center;  _float: none; _margin: 9px 0 0 0; }
+
+#r-sky      { display: none; position: fixed; top: 0; left: 1000px; padding-left: 10px; width: 120px;
+        _position: absolute; _top: expression( ( ( ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) > 2250 ? 2250 : ignoreMe ) ) + 'px' ); }
+#r-sky-l    { display: none; position: fixed; top: 0; left: 0; padding-right: 10px; width: 120px;
+        _position: absolute; _top: expression( ( ( ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) > 2250 ? 2250 : ignoreMe ) ) + 'px' ); }
+
+#r-ht       { display: none; width: 278px;  background: white; border: 1px solid #D0D0D0; margin: 19px 0 0 25px; padding: 10px 10px;  }
+#r-ht1      { display: none; width: 280px; padding: 15px 0; overflow: hidden;  float: left; }
+#r-ht2      { display: none; width: 280px; padding: 15px 0; overflow: hidden;  border-top: 1px dotted #D0D0D0; float: left; }
+#r-ht3      { display: none; width: 280px; padding: 15px 0; overflow: hidden;  border-top: 1px dotted #D0D0D0; float: left; }
+
+.r-ht-ozn { color: #BCBCBC; font: 8px/8px Arial!important; margin: -17px 0 2px 0; float: left; display: block; text-transform: uppercase; }
+
+#r-b-300    { width: 300px; clear: both; margin: -10px 0 10px 0; }
+
+#r-b-300 SPAN, #r-leader SPAN, #r-leader-b SPAN, #r-full SPAN, #r-bfull SPAN, #r-sfull SPAN, #r-big SPAN,#r-extrabig SPAN, #r-ht1 SPAN, #r-ht2 SPAN, #r-ht3 SPAN, #r-sky SPAN,  #r-sky-l SPAN, #r-nes SPAN, #r-rectan-d SPAN, #r-bfull-mini SPAN { color: #BCBCBC; font: 8px/8px Arial; margin: 0 0 2px 10px; text-transform: uppercase }
+#r-sky SPAN, #r-sky-l SPAN { color: white; display: block; }
+#r-ht1 SPAN, #r-ht2 SPAN,#r-ht3 SPAN, #r-bfull-mini SPAN, #r-leader SPAN { display: block; }
+
+#r-full-ozn, #r-promo-ozn { display: none; }
+#r-sfull .reklama,  #r-sfull TABLE {  text-align: center; margin: auto; }
+#r-ht1 IMG, #r-ht2 IMG, #r-ht3 IMG { margin: 0 10px 0 0; }
+#r-ht1 IMG:first-child, #r-ht2 IMG:first-child, #r-ht3 IMG:first-child { float: left; }
+#r-ht1 .reklama, #r-ht2 .reklama, #r-ht3 .reklama { display: block; width: 280px; overflow: hidden;}
+#r-big-ozn, #r-extrabig-ozn { text-align: left; width: 292px; display: block }
+#r-bfull-ozn { display: block; font: 8px/8px Arial;  text-align: left; padding: 0 0 0 80px; }
+#r-bfull-mini-ozn {  padding: 0 380px 0 0}
+
+#r-ppc-2 { margin-bottom: 20px; }
+.advert-ppc-wrap { clear: both; }
+
+/* default zobrazeni reklamy
+.ad-visible { display: block !important; }
+
+
+/* #### Reklama
+
+.rrt        {  }
+#rrt        { width: 266px; height: 150px;  }
+#rrt A      { position: relative; width: 266px; height: 150px; background: transparent url("/img/1/mam_bg_hp_video.gif") no-repeat bottom left; display: block; }
+#rrt IMG    { width: 266px; height: 150px; _width: 295px; _height: 195px; _filter:progid:DXImageTransform.Microsoft.Matrix(m11=0.88, m22=0.88, enabled=true, sizingmethod='auto expand');}
+#rrt SPAN   { _position: absolute; _width: 87px; _height: 88px; _top: 42px; _left: 86px; _z-index: 2; }
+#play-ico { position: absolute; width: 87px; height: 88px; top: 42px; left: 86px; z-index: 2; _filter: none; }
+.play-ico-new { position: absolute; width: 80px; height: 48px; background: transparent url("/img/videoplayer/i11/skin11_play-big.png") no-repeat 0 0; }
+.play-ico-new:hover { background-position: 0 -96px; }
+
+/* Zahlavi ####
+#head       {  width: 1000px; height: 240px; position: relative; }
+
+#logo       { float: left; width: 1000px; position: absolute; z-index: 2; top: 23px; left: 3px; word-spacing: 3px; font: bold 1px/1px Arial; color: #FFFFFF; }
+#logo H1    { margin: 0; padding: 0; font: 1px/1px Arial; }
+#logo A     { width:  237px; height: 47px; display: block;  position: relative;color: white }
+#logo A SPAN    { width:  237px; height: 47px; position: absolute; left: 0; top: 51px; background-image: url("/img/11_0/loga/maleihned.cz.png"); cursor: pointer; }
+#logo2      { display: none; }
+
+.order          { width: 260px; height: 99px; position: absolute; top: 0px; left: 360px; float: none; z-index: 3; }
+.order2         { float: right; width: 375px; height: 118px; position: absolute; top: 10px; left: 622px; }
+.order2 IMG     { float: left; margin: 0 10px 0 0 }
+.order2 A, .order2 A:visited    { font: 13px/16px Arial; color: #505050 }
+.head-author        { margin: 43px 0 2px 0; color: #CD081C; font: bold 1.0em/15px Arial; display: block  }
+
+.order-hp       { float: right; height: 37px; position: absolute; top: 84px; right: 0; color: #3D3C3F;  }
+.order-hp A         { text-decoration: none; cursor: hand }
+.order-hp IMG       { float: left; margin: 17px 3px 0 2px }
+.arrow-money        { float: left; width: auto; height: 15px; margin: 17px 0 0 0; padding: 0 12px 0 7px;  color: #174F82; font: 13px Arial!important  }
+.order-hp .arrow-money A { text-decoration: none; }
+.order-hp .arrow-money A:hover  { text-decoration: underline!important; }
+
+.rate   { float: left; font: 1.5em 'Trebuchet MS'; color: #595959; margin: 11px 0 0 6px }
+.rate2  { float: left; font: bold 2.8em/37px 'Trebuchet MS';  margin: 1px 0 0 0 }
+.rate3  { float: left; font: bold 1.5em 'Trebuchet MS'; margin: 2px 0 0 0;  }
+
+#menu0      {  width: 1000px;position: absolute; top: 0; left: 0;  float: none; height: 33px; font: normal 12px/33px Arial;  }
+.fl     { float: left; width: 360px }
+#head .mr   { float: right; width: 300px;  height: 33px; display: block; position: relative; z-index: 1; text-align: right; _display: inline }
+#head .mr .fl   { width: 60px; }
+#head .mr A { margin: 0 4px; color: #174F82 }
+#head .mr A#nick { font-weight: bold; }
+A#hnplus-r  { float: right; background: transparent url("/img/11_0/predplatne-tlacitka.png") no-repeat top right;  width: 168px; font: normal 12px/23px Arial; height: 23px; display: block; position: relative; z-index: 1; text-align: center; margin: 5px!important; _display: inline }
+A#hnplus-r:hover    { background-position: 0 -23px  }
+
+/* login popup
+#login-top-form { padding: 15px 23px; display: none; z-index: 100; left: 700px; top: 30px; position: absolute; width: 250px; height: 166px; background: transparent url('/img/11_0/box-pozadi.png') no-repeat left top; font-size: 11px; line-height: 19px; }
+#login-top-form A   { text-decoration: underline; color: #174F82 !important; }
+#login-top-form LABEL   { margin-top: 10px; clear: left; width: 40px; display: block; float: left; }
+#login-top-form INPUT   { margin: 9px 0 0 8px; height: 19px; border: 1px solid #D9D9D9; font-family: Arial,Helvetica,sans-serif; font-size: 12px; padding: 0 0 0 8px; width: 112px; }
+#login-top-form SPAN    { display: block; margin-top: 14px; }
+#login-top-form #l-s    { text-indent: -999px; line-height: 0; font-size: 0; display: block; float: left; background: transparent url("/img/11_0/box-prihlasit.png") no-repeat 0 0; border: 0; color: white; height: 21px; margin: 15px 0 0 40px; width: 111px; cursor: pointer; }
+
+
+#menu1      { position: absolute; left: 0; top: 128px; float: left /* TODO: check if the positioning is reseted somewhere for this to work ; width: 700px; border-top: 2px solid #000;  }
+#menu1 A    { float: left; padding: 0 10px; font: 0.85em/30px Arial; text-transform: uppercase; }
+#menu1 SPAN { float: left; width: 1px; height: 9px; color: #000; font: 8px/30px Arial; }
+#menu2      { position: absolute; left: 0; top: 158px; float: left /* TODO: check if the positioning is reseted somewhere for this to work ; width: 1000px; height: 30px; padding: 0; background-color: #000; }
+#menu2 A,
+#menu2 A:visited { position: relative; z-index: 1; right: 0; bottom: 0; float: left; display: block /* TODO: it's forced value with float set... ; color: #000; font: 1.1em Arial; text-decoration: none; }
+#menu2 A SPAN   { position: absolute; z-index: 1; left: 0; top: 0; margin: 0; cursor: pointer; }
+
+#nakupuj { display: block; width: 55px; margin: 0 7px 0 0; background: url('http://ihned.cz/img/11_0/basket_white.gif') no-repeat 100% 45%; } /* TODO: check where this rule is used - move to proper place
+
+#ihn    { width: 90px; }
+#ihn SPAN   { background: url('/img/11_0/menu2-01.png') 0 0; width: 90px; height: 30px;}
+#ihn:hover SPAN { background-position: 0 -30px; }
+#zpravy { width: 106px; margin: 0 1px 0 0; }
+#zpravy SPAN { background: url('/img/11_0/menu2-01.png') -90px 0; width: 106px; height: 30px; }
+#zpravy:hover   SPAN { background-position: -90px -30px; }
+#byznys { width: 104px; margin: 0 1px 0 0; }
+#byznys SPAN { background: url('/img/11_0/menu2-01.png') -197px 0; width: 104px; height: 30px; }
+#byznys:hover   SPAN { background-position: -197px -30px; }
+#life { width: 77px; margin: 0 1px 0 0; }
+#life   SPAN { background: url('/img/11_0/menu2-01.png') -302px 0; width: 77px; height: 30px; }
+#life:hover SPAN { background-position: -302px -30px; }
+#art { width: 71px; margin: 0 1px 0 0; }
+#art    SPAN { background: url("/img/11_0/menu2-01.png") -663px 0; width: 71px; height: 30px; }
+#art:hover  SPAN { background-position: -663px -30px; }
+#techno { width: 84px; margin: 0 1px 0 0; }
+#techno SPAN { background: url('/img/11_0/menu2-01.png') -380px 0; width: 84px; height: 30px; }
+#techno:hover   SPAN { background-position: -380px -30px; }
+#sport { width: 95px; margin: 0 1px 0 0; }
+#sport SPAN { background: url('/img/11_0/menu2-01.png') -465px 0; width: 95px; height: 30px; }
+#sport:hover SPAN { background-position: -465px -30px; }
+#dialog { width: 102px; margin: 0 1px 0 0; }
+#dialog SPAN { background: url('/img/11_0/menu2-01.png') -561px 0; width: 102px; height: 30px; }
+#dialog:hover   SPAN { background-position: -561px -30px; }
+#zeny { width: 130px; margin: 0 1px 0 180px; }
+#zeny   SPAN { background: url('/img/11_0/menu2-01.png') -664px 0; width: 130px; height: 30px; }
+#zeny:hover SPAN { background-position: -664px -30px; }
+#hnpls { width: 91px; margin: 0 1px 0 0; }
+#hnpls SPAN { background: url('/img/11_0/menu2-01.png') -592px 0; width: 91px; height: 30px; }
+#hnpls:hover SPAN { background-position: -592px -30px; }
+#times { float: right !important; width: 88px; margin-right: 1px; }
+#times SPAN { background: url('/img/11_0/menu2-01.png') -734px 0; width: 88px; height: 30px; }
+#times:hover SPAN { background-position: -734px -30px; }
+#future { width: 95px; margin: 0 1px 0 0; }
+#future SPAN { background: url('/img/11_0/menu2-01.png') -826px 0; width: 95px; height: 30px; }
+#future:hover SPAN { background-position: -826px -30px; }
+
+/* TODO: unify order of same rules in all files!
+#menu3      { padding: 0 0 0 5px; float: left; width: 995px; height: 32px; position: absolute; top: 188px; left: 0; background: url("/img/11_0/menu3.gif") repeat-x bottom right; margin-bottom: 15px;  }
+#menu3 A    { margin-top: 2px!important; position: relative; display: block; float:left; text-transform: uppercase; padding: 0; font: 1.0em Arial;}
+/* // TODO: see above
+#search-box     { float: right; width: 300px; height: 30px; border-top: 2px solid black; height: 28px; position: absolute; top: 128px; left: 700px; font: 11px/15px Arial; background: #E4E4E4;  }
+
+.under-t    { float: left; width: 662px; font: bold 12px Arial; margin: 30px 0; position: relative }
+A.send      { float: left; line-height: 0; border: 0; margin: 0 0 0 3px; background: url('/img/11_0/button_order.png'); width: 149px; height: 21px;font: 0.95em/19px Arial; color: white; display: block; cursor: pointer; _display: inline; text-align: center; position: absolute; top: -2px; right: 25px; display: none  }
+
+.search-input { float: left; margin: 4px 0 0 10px; width: 246px; height: 20px; border: 0;  padding:  0 0 0 10px; font: 12px/18px Arial; color: gray; background: #FFFFFF url("/img/5/google-wattermark.gif") no-repeat 95% 50%; }
+.search-submit { float: left; margin: 4px 0 0 0 }
+
+#search-box-ov { float:right; width: 300px; height: 20px;  color: white; margin-top: 3px }
+.search-input-ov { float: left; margin-left: 10px; width: 246px; height: 20px; border: 0; margin-top: 3px; padding:  0 0 0 10px; font: 12px/18px Arial; color: gray;  }
+.search-submit-ov { float: left; margin: 3px 0 0 0 }
+
+/* Zahlavi ####
+
+/*  střed
+
+.sch-form   { line-height: 25px; margin: 10px 0; padding: 5px 0; border-top: 1px dotted black; border-bottom: 1px dotted black; }
+.sch-form SPAN  { float: left; height: 50px; margin-right: 8px; }
+.sch-form DIV   { float: right; display: inline; width: auto; height: 20px; margin: 3px 65px 0 0; border: 1px solid gray; overflow: hidden; }
+.sch-input  { border: 0; top: 0px; }
+.sch-submit { border: 0; background: transparent url("http://ihned.cz/img/11_0/search-submit.gif") no-repeat top left;
+            text-indent: -100px; line-height: 0; font-size: 0; width: 22px; height: 20px; overflow: hidden; position: relative; top: -3px; _top: -4px;}
+.sch-form A { font-weight: bold; text-decoration: underline; }
+
+#tophn      { float: left; width: 1000px; height: 120px; background: #ECECED; margin: 1px 0 20px 0 }
+#tophn .ferula { margin: 0 2px 0 0; float: left; width: 24px; height: 120px;  }
+
+a#carousel-top-left { margin: 0!important; }
+
+#carousel-top { float: left; width: 933px; height: 118px;  border-bottom: 1px solid #9C9D9F; border-top: 1px solid #9C9D9F;  position: relative; overflow: hidden;}
+#carousel-top .ia       { width: 250px;  height: 118px; position: absolute; top: 0; }
+#carousel-top .ia .photo    { float: left; padding: 0 8px 8px 8px; }
+#carousel-top .ia .photo IMG    { width: 118px; height: 118px }
+#carousel-top .ia .text     { width: 110px; float: left; font: 16px/20px Georgia;  padding: 20px 0 0 0; }
+#carousel-top .ia .text A   { color: #202020; }
+
+a#carousel-top-left     { margin: 0 0 0 25px; float: left; width: 20px; height: 120px; background: url("/img/11_0/ticker-detail/zpravy-neaktivni-L.gif") no-repeat; }
+a#carousel-top-left:hover   { float: left; background: url("/img/11_0/ticker-detail/zpravy-aktivni-L.gif") no-repeat;  }
+
+a#carousel-top-right        { float: left; width: 20px; height: 120px; background: url("/img/11_0/ticker-detail/zpravy-neaktivni-P.gif") no-repeat; }
+a#carousel-top-right:hover  { float: left; background: url("/img/11_0/ticker-detail/zpravy-aktivni-P.gif") no-repeat; }
+
+#icarousel0 { left: 0; }
+#icarousel1 { left: 250px; }
+#icarousel2 { left: 500px; }
+#icarousel3 { left: 750px; }
+#icarousel4 { left: 1000px; }
+#icarousel5 { left: 1250px; }
+#icarousel6 { left: 1500px; }
+#icarousel7 { left: 1750px; }
+
+/*  střed
+/*  zarazky
+.none   { display: none; }
+.servis .video, .servis .embedded_video, .servis .gallery, .servis .info_graphic { display: inline; }
+/*   zarazky
+
+/* right ####
+
+
+.box-label      {  height: 25px;  clear: both; border-top: 1px dotted #D3D3D3; border-bottom: 1px dotted #D3D3D3; font: bold 1.1em/25px Arial!important;color: #174F82;margin: 0 0 10px 0; text-transform: uppercase; }
+.box-label A, .box-label A:visited  { width: auto; /*width: 183px;  position: relative; display: block;  padding-left: 4px; color: #2D6389;  }
+.box-label A SPAN   { width: 183px; height: 36px;  position: absolute; left: 0; top: 1px; background-repeat: no-repeat; background-position: left bottom; cursor: pointer; z-index: 1 }
+
+.box            { width: 298px; border: 1px solid #D9D9D9; margin: 0 0 20px 0; clear: both; float: right}
+.no-top-border      { border-top: 0!important; }
+
+
+/*.ow.no-author { background-image: none!important; }
+
+
+.jobs09-label       { background: #19325A; /*#072450 url("http://ihned.cz/img/advert/jobs09_bg.gif") repeat-x; height: 35px; padding: 10px 6px 0 30px; text-align: right; clear: both;  }
+.jobs09-label IMG   { float: left; }
+.jobs09-label A, .jobs09-label A:visited { color: white; font: bold 12px/35px Arial; }
+.jobs09         { border: 1px solid #143058; border-top: 0; padding: 12px 12px 12px 10px; text-align: right;  _padding: 12px; }
+.jobs09 A, .jobs09 A:visited { color: #0A2851!important; text-decoration: underline; font: bold 12px Arial!important; }
+.jobs09 A:hover     { text-decoration: none; }
+.jobs09 UL      { text-align: left; list-style-image: url("http://ihned.cz/img/advert/jobs09_dot.gif"); margin: 0 9px 0 20px!important; _list-style-image: url("/img/advert/jobs09_dot_IE.gif"); }
+.jobs09 UL LI       { padding-bottom: 3px; margin: 0 0 2px 0!important }
+.jobs09 UL LI A,
+.jobs09 UL LI A:visited { font-weight: normal!important; }
+.jobs09-bottom      { background:#19325A; /* #072450 url("http://ihned.cz/img/advert/jobs09_bg_bottom.png") repeat-x; height: 28px; margin-bottom: 15px; padding: 0 6px 5px 0; text-align: center; clear: both;  }
+.jobs09-bottom SPAN { color: #FFA500; font-weight: bold;  }
+.jobs09-bottom A, .jobs09-bottom A:visited { color: white; font: 12px/35px Arial; text-decoration: underline }
+
+/* ----- used in template2/allwebs09/jobs09_(all files) (same styles are in css/09/allwebs.css, css/09/R.css, css/11/allwebs.css and css/11/B2B_allwebs.css) -----
+#jobs-cz { position: relative; margin: 0 0 10px 0; background: #fff; border: 1px solid #19325a; font-family: Arial, Helvetica, Geneva, sans-serif; clear: both; }
+.jb-header { height: 55px; background-color: #19325a; position: relative; }
+#jb-logo { position: absolute; left: 20px; top: 14px; }
+.jb-tabs { position: absolute; top: 24px; right: 20px; }
+.jb-tab { display: block; width: 80px; height: 30px; float: left; background: #f90; margin: 0 0 0 5px; text-align: center; font-size: 14px; }
+.jb-tab a { line-height: 31px; color: #fff !important; }
+.jb-active { height: 31px; background: #fff; }
+.jb-active a { color: #19325a !important; }
+.jb-lst { margin-left: 0 !important; list-style-type: none; padding: 12px 5px 7px 19px; margin: 0; font-size: 12px; position: relative; list-style-image: none; }
+.jb-lst li a { color: #000 !important; position: relative; text-decoration: underline; font-size:12px; }
+.jb-more { float: left; color: #000 !important; font-weight: bold; font-size: 12px; margin: 8px 0 19px 33px; position: relative; text-decoration: underline; }
+.jb-lst li { list-style-type: none; padding: 5px 0 3px 13px; margin: 0 !important; line-height: 1.3em; background: url("http://i.iinfo.cz/l/jobs-li.png") no-repeat 0 12px; list-style-image: none; }
+.jb-cb { clear: both; height: 1px; overflow: hidden; }
+.jb-footer { height: 28px; background-color: #19325a; font-weight: bold; color: #f90; font-size: 12px; text-align: center; }
+.jb-footer a { line-height: 28px; color: #fff !important; }
+/* ----- // used in template2/allwebs09/jobs09_(all files) -----
+
+
+/* right ####
+
+.ferula     { float: left; width: 24px; height: 168px; background:  url("/img/11_0/ferula.png") no-repeat top right; background-position: -24px -504px; margin-right: 2px; _display: inline; }
+
+/* pata HN byznys nabídka
+
+.business       { float: left; width: 1000px; padding: 0; margin: 20px 0 40px 0; }
+.ferula.business-tab    {  margin: 0 2px 0 0!important; background-position: -144px 0px!important;  }
+.business .content  { float: left; width: 968px; height: 162px; padding: 4px 0 0 4px; border: 1px solid #AFAFAF; overflow: hidden }
+.business .content-in   { position: relative; width: 965px; height: 162px; overflow: hidden }
+.business .content-inner{ width: 980px;  }
+.business .item     { _overflow: hidden; width: 142px; height: 148px; padding: 0 9px; margin: 5px 0;  border-right: 1px dotted #000000; float: left; _display: inline; }
+.business .item.b-or0  IMG  { margin: 10px 0 20px -11px; _margin: 10px 0 20px -21px; _position: relative; }
+.business .item.b-or1  IMG  { margin: -12px 0 0  -5px;  }
+.business .item.b-or2  IMG  { margin: 17px 0; }
+.business .item.b-or3  IMG  { margin: 15px 0 12px 0;  }
+.business .item.b-or4  IMG  { margin: -7px 0 0 -30px; _margin: 0; }
+.business .item.b-or4 { _overflow: hidden; }
+.business .item.b-or4 .text { _z-index: 80; _float: left; _margin: -7px 0 0 -18px; _position: relative; }
+.business .item.b-or5  IMG  { margin: 8px 0 0 70px!important; }
+.business .item  IMG    { margin: 5px 0 }
+.business .item .name   { margin: 0 0 3px 0; color: #191919; font: bold 1.0em Arial; display: block;}
+.business .item .text   { _position: relative; font: 1.0em Arial; color: #202020; display: block; }
+
+.business .content, .business .content-in { overflow: visible; }
+.business .boxv2 .item .name { color: #135182; font-weight: bold; font-size: 1.2em; line-height: 1.1em; }
+.boxv2 .item { position: relative; }
+.boxv2 .image { position: absolute; bottom: -14px; }
+.c-or0 .image { left: -7px; bottom: -13px;  }
+.c-or1 .image, .c-or2 .image, .c-or3 .image {right: -1px; }
+.c-or4 .image { left: 10px; bottom: -38px; }
+.c-or5 .image { left: -15px; bottom: -15px; }
+.business .c-or5 { border: none; }
+.c-or1 .name, .c-or2 .name, .c-or3 .name { width: 105px;  }
+
+
+
+/* střed dolní nabídka
+
+/* boxy
+.ow         { float: left; width: 298px; height: 337px; border: 1px solid #D0D0D0; background-color: #F0F0F0; margin: 0 36px 18px 0; _display: inline ; position: relative; overflow: hidden  }
+/*.gray         { background-color: #E4E4E4 }
+.ow-in          { float: left; padding: 6px 15px; position: relative}
+.ow .nadtitulek A   {  font: bold 12px Arial;color: #174F82; text-transform: uppercase }
+.ow .exclusive      { float: right; }
+.ow .exclusive SPAN { font: 11px/15px Arial;background-color: #E2007A; padding: 0 5px; color: white; margin-right: 0; }
+.ow .title      { float: left; width: 276px; margin: 5px 0 2px 0; height: 63px }
+.ow .title A, .ow .title A:visited { font: bold 15px/18px Arial; color: #202020; text-decoration: none; }
+.ow .title A:hover  { text-decoration: underline; }
+.ow .prx        { float: left; width: 175px; font: 13px/17px Arial; }
+.ow .prx A.next     { display: block; font: 13px Arial; margin-top: 3px}
+.ow-img         { width: 298px; height: 166px; }
+.ow.small-photo .ow-img { margin: 16px 0 0 16px; }
+.ow.small-photo IMG { width: 266px; height: 150px; }
+
+.ow .ow-in .exclusive.kp SPAN   { position: absolute; top: -21px; left: 3px; background: #202F64; color: white; font: bold 11px/15px Arial; padding: 1px 10px; }
+
+.nadtitulek-horni { color: #F0F0F0!important }
+
+/*
+.ow.small-photo .ow-main-link { z-index: 50; margin: -1px 0 0 -1px; position: absolute; left: 16px; top: 16px; height: 151px; width: 266px; }
+.ow.small-photo .ow-img-layer { display: none }
+
+
+SPAN.video, A.video { background-color: transparent!important; }
+.ow.video, .ow.embedded_video               { background-color: #2B292E!important; }
+.ow.video .nadtitulek-horni, .ow.embedded_video .nadtitulek-horni   { display: block; font-weight: bold; margin: 5px 0 5px 16px; text-transform: uppercase; }
+.ow.video .nadtitulek, .ow.embedded_video .nadtitulek   { display: none; }
+.ow.video .video, .ow.video OBJECT, .ow.embedded_video .embedded_video  { margin-left: 16px; } /*.ow.embedded_video .embedded_video, .ow.embedded_video OBJECT
+.ow.video IMG, .ow.embedded_video IMG                       { width: 266px!important; height: 150px!important; } /*.ow.embedded_video IMG
+.ow.video .title A, .ow.video .prx, .ow.embedded_video .title A, .ow.embedded_video .prx { color: #B8AFA8!important; }
+.ow.video .title, .ow.embedded_video .title     { margin: 10px 0 0px 0; }
+.ow.video .next, .ow.video .exclusive, .ow.embedded_video .next, .ow.embedded_video .exclusive { display: none!important; }
+.ow.video .author-photo, .ow.embedded_video .author-photo { display: inline!important; }
+
+.col3 .ow.video .title A, .col3 .ow.video .prx, .col3 .ow.embedded_video .title A, .col3 .ow.embedded_video .prx { color: #B8AFA8!important; }
+.col3 .ow.video .title, .col3 .ow.embedded_video .title     { margin: 5px 0 0 0; }
+.col3 .ow.embedded_video OBJECT { margin-left: 16px; }
+.col3 .ow.embedded_video .embedded_video OBJECT { margin-left: 0; }
+
+.ow .author-photo   { position: absolute; bottom: 0; right: 0; z-index: 1; width: 118px!important; height: 118px!important; display: none }
+.ow .author-photo IMG   { width: 118px!important; height: 118px!important; position: absolute; bottom: 0; right: 0; z-index: 1; }
+.ow .nadtitulek-horni   { display: none; }
+
+/*
+.ow IMG { width: 300px; height: 168px; }
+
+.ow .ow-main-link { z-index: 50; margin: -1px 0 0 -1px; position: absolute; left: 0; top: 0; height: 168px; width: 300px; }
+.ow .ow-img-layer { z-index: 49; }
+
+.ow-img-layer { background: url("/img/11_0/sedy_ramecek_pixel.png") no-repeat scroll right top transparent; height: 168px; left: 0; margin: -1px 0 0 -1px; position: absolute; top: 0; width: 300px;}
+
+
+/* nejčtenější
+
+
+.box-you-like           { margin: 0 0 20px 0; }
+.box-you-like .in       { }
+.box-you-like .number   { float: left; width: 35px; height: 50px; margin-left: 10px; font: 33px Arial; color: #174F82; }
+
+.box-you-like .text     { font: 13px/15px Arial; line-height: 15px; padding: 6px 0 2px 0; width: 249px; border-bottom: 1px dotted #FFFFFF; margin: 0; overflow: hidden; min-height: 42px; }
+
+.box-you-like .text A       { color: #114B8B; margin: 0 0 4px 0; display: block; }
+.box-you-like .text SPAN    { font-weight: bold; }
+
+.box-you-like .share        { float: left; font: 11px Arial; margin: 3px 3px 1px 0; color: #D20820; text-transform: uppercase; }
+.box-you-like#most-readed .share        { float: none; }
+.box-label.yl { color: #174F82 }
+/* nejčtenější
+
+/* boxy
+.box.newest { width: 288px; padding: 3px 0 0 10px; }
+.box.newest .item { padding: 10px 0; float: left; _display: inline; }
+.box.newest .item .l { float: left; width: 54px; height: 54px}
+.box.newest .item .l A IMG { width: 53px; height: 53px; }
+.box.newest .item .r { margin: 0 0 0 10px; font-weight: bold; float: left; width: 205px; font-size: 12px; }
+.box.newest .item .r .author{ display: block; margin: 10px 0 0 0; color: #ED7802!important; }
+
+/* pata  ####
+
+#foot .tabs { color: black; list-style-type: none; list-style-image: none; height: 26px; padding: 0; margin: 0; overflow: hidden; }
+#foot .tabs li { float: left; height: 26px; margin: 0; width: 160px; margin: 0 3px 0 0; }
+#foot .tabs li a { margin: 0; overflow: hidden; height: 26px; line-height: 26px; display: block;  width: 160px; text-align: center; color: #87888A; background: url("/img/11_0/foot-tabs.png") no-repeat 0 0; text-transform: uppercase; font-size: 11px;}
+#foot .tabs li.last { margin: 0; }
+#foot .tabs li.last a { margin: 0; }
+#foot .tabs li a:xhover, #foot .tabs li.active a { color: black; text-decoration: none; background: url("../img/11_0/foot-tabs.png") no-repeat 0 -28px; }
+
+#foot           { float: right; width: 974px; color: silver;  margin: 0 0 0 25px; }
+#foot A         { color: silver; }
+.header         { height: 30px; background: #333333; position: relative; padding: 0 0 0 8px; overflow: hidden }
+.header A       { font: 12px Arial; display: block; height: 100%; float: left; padding-top: 8px; } /* this also applies on '.socials a' (which is not on purpose. see there)
+.header .join       { margin: 2px 18px 0 0; padding: 6px 85px 0 0; background: transparent url("/img/11_0/logo_ihnedplus_foot.gif") no-repeat 100% 28%; }
+.header .slash      { font-size: 9px; float: left; padding: 10px 8px 0 8px; }
+
+
+/* ----- SOCIAL NETWORKS -----  /* same for:   09/allwebs.css   and   11/allwebs.css   and   11/B2B_allwebs  /* respekt (R.css) uses same classnames but none of these files is loaded
+/* TODO: rule '.header A' and '#foot A' (and maybe something more too) applies also on links inside .socials. the name 'header' is too general to be sure it is not (ab)used on other places on the page too.
+.socials        { float: left; margin: 8px 0 0 20px; }
+.icon-socials,
+.icon-feeds         { display: block; width: 16px !important /* to reset value from '.header A' ; height: 16px !important /* to reset value from '.header A' ; background: url('/img/11_0/social_icons.png') no-repeat 100px 100px /* no image will be shown if more specific class will be missing (or is not defined) ; }
+.icon-socials       { float: left; padding-top: 0 !important /* to reset value from '.header A' ; margin: 0 8px 0 0; }
+.icon-facebook      { background-position: 0 0; }
+.icon-facebook:hover    { background-position: 0 -16px; }
+.icon-twitter       { background-position: -16px 0; }
+.icon-twitter:hover { background-position: -16px -16px; }
+.icon-rss       { background-position: -32px 0; } /* may appear as either .icon-socials or .icon-feeds. TODO: is the difference really needed?
+.icon-rss:hover     { background-position: -32px -16px; }
+.icon-linkedin      { background-position: -48px 0; }
+.icon-linkedin:hover    { background-position: -48px -16px; }
+.icon-google-plus { background-position: -64px 0; }
+.icon-google-plus:hover { background-position: -64px -16px; }
+/* ----- // SOCIAL NETWORKS -----
+
+
+.tag-rss        { text-align: right; height: 18px; clear: both; }
+.tag-rss A      { float: right; margin-top: 2px; }
+
+
+#foot .content          { height: 333px; background: #000000; position: relative; font-size: 11px; line-height: 13px; }
+#foot .content .heading,
+#foot .content .heading A   { font-size: 12px; color: #009EE0; font-weight: bold; }
+#foot .content .heading.normal  { font-size: 11px; font-weight: normal; }
+#foot .content A        { display: block; }
+#foot .fc           { margin: 13px 0 0 0; position: absolute; }
+#foot #fc1          { left: 120px; }
+#foot #fc2          { left: 397px; }
+#foot #fc3          { left: 595px; }
+#foot #fc4          { left: 790px; }
+#foot #fc5          { font-size: 11px; left: 33px; top: 252px; margin: 0; width: 580px; }
+#foot #fc5 .hn          { float: left; background: url("/img/11_0/hn-logo-footer.png") no-repeat;  display: block; margin: 0 0 10px 0; width: 270px; height: 23px  }
+#foot #fc5 .ihn         { float: right; background: url("/img/11_0/ihned-logo-footer.png") no-repeat; display: block; margin: 3px 0 0 0; width: 105px; height: 20px; }
+#foot #fc5 .text        { clear: both; }
+#foot #fc5 .text A,
+#foot #fc5 .text A:visited  { text-decoration: underline; display: inline; }
+#foot #fc5 .text A:hover    { text-decoration: none }
+#foot .highlighted      { color: #1D8BBC; }
+#foot .ihned-plus { margin: 0 0 0 -2px; width: 64px; height: 14px; background: transparent url("/img/11_0/logo_ihnedplus2_foot.gif") no-repeat 0 0; }
+
+
+
+.daytips        { float: left; width: 1000px; padding: 0; margin: 0 0 25px 0; clear: both; }
+.ferula.daytips-tab { margin: 0 2px 0 0; background-position: -72px -168px; }
+.daytips .content   { width: 968px; background-color: #F0F0F0; padding: 0 0 0 6px; float: left  }
+.daytips .item      { padding: 3px 13px 13px 12px; background-color: #FFFFFF; border: 1px solid #FFFFFF; width: 116px; height: 286px; margin: 10px 0 10px 5px; float: left; position: relative;  _display: inline;}
+
+.daytips .item .name    { height: 24px; margin: 0 0 3px 0; color: #C20069; font: 5px/25px 'Arial Black'; text-transform: uppercase; display: block;}
+.daytips .item  .name IMG   { margin: 2px 0 0 0 }
+
+/* .daytips .item .name.byznys  { width: 56px; color: #8A705E; background: url("/img/11_0/karusel-byznys.gif") no-repeat 0 4px; }
+.daytips .item .name.life   { width: 28px; color: #EDB1C7; background: url("/img/11_0/karusel-life.gif") no-repeat 0 4px; }
+.daytips .item .name.sport  { width: 46px; color: #869F11; background: url("/img/11_0/karusel-sport.gif") no-repeat 0 4px; }
+.daytips .item .name.techno     { width: 36px; color: #cc051f; background: url("/img/11_0/karusel-tech.gif") no-repeat 0 4px; }
+.daytips .item .name.zpravy     { width: 57px; color: #56A5C6; background: url("/img/11_0/karusel-zpravy.gif") no-repeat 0 4px; }
+.daytips .item .text        { margin: 13px 0 0 0; font: 13px/16px Arial; color: #202020!important; display: block; _word-wrap: break-word; }
+.daytips .item A.more       { position: absolute; bottom: 0; right: 0;  margin: 0 8px 7px 0; }
+.daytips .plus          { text-align: center; line-height: 296px; font-weight: bold; font-size: 40px; float: left; color: black; width: 40px; height: 306px; margin: 10px 10px 0 15px; }
+
+.daytips .hnplus        { background: #000000;  float: left; margin: 10px 2px 10px 4px; width: 145px; height: 304px; position: relative; }
+.daytips .hnplus #plus-layer    { position: absolute; top: 0; left: 0; background: url("/img/11_0/daytips-layer.png") no-repeat top right; width: 145px; height: 133px }
+.daytips .hnplus #plus-image    { padding: 27px 0 0 27px; }
+.daytips .hnplus .name      { padding: 6px 0 0 13px; font-size: 14px; text-transform: uppercase; display: block;  color: #F5C018; height: 21px; font-weight: bold;}
+.daytips .hnplus .text      {  margin: -7px 13px 13px 12px;  display: block; color: #FFFFFF;}
+.daytips .hnplus .text A,
+.daytips .hnplus .text A:visited { color: #FFFFFF; font: 13px/16px Arial;}
+.daytips .hnplus .title     { margin: 12px 13px 13px 13px; font-size: 15px; color: #F0F0F0; }
+
+
+/* pata  ####
+.clean {clear: both!important; font: normal 1px/1px arial; display: block; height: 1px; overflow: hidden;}
+
+/* Styled checkbox http://ryanfait.com/resources/custom-checkboxes-and-radio-buttons/
+.checkbox, .radio { width: 15px; height: 15px; padding: 0!important; background: url("/img/11_0/diskuze-checkboxy.png") no-repeat; display: block; clear: left; float: left; }
+.select { position: absolute;  width: 164px;  height: 15px; padding: 0 24px 0 8px; color: #fff; font: 12px/21px arial,sans-serif; background: url(select.gif) no-repeat; overflow: hidden; }
+/* Styled checkbox
+
+/* rubrika
+
+ DIV.ow-rub         { float: right; width: 637px; min-height: 82px; margin: 10px 19px 2px 0; _display: inline; } /* nastaveno width pro vypis rubriky
+.ow-rub .img        { float: left;  margin: 0 10px 10px 0; width: 100px; height: 56px; }
+.ow-rub .img IMG    { width: 100px; height: 56px; margin-top: 22px }
+.ow-rub.ow-rub-or5 .txt         { border-bottom: 0; }
+.ow-rub .txt        { float: left;  width: 527px;  border-bottom: 1px dotted #D3D3D3; padding: 0 0 10px 0;}  /* nastaveno width pro vypis rubriky
+.ow-rub .txt H2         { font: bold 17px/20px Arial; text-decoration: none; margin: 3px 0px 0px 0px; clear: both }
+.ow-rub .txt H2 A,
+.ow-rub .txt H2 A:visited { text-decoration: none }
+.ow-rub .txt H2 A:hover      { text-decoration: underline }
+.ow-rub .txt P      { margin: 0; }
+.ow-rub .txt A.next, .ow-rub A.next:visited { font: 13px Arial!important  }
+.ow-rub .exclusive      { }
+.ow-rub .exclusive  SPAN    { float: left; font: 11px/15px Arial;background-color: #E2007A; color: white; padding: 0 5px;}
+.ow-rub .servis     { height: 15px;  font: 13px/15px Arial; color: #E63E39; margin: 2px 0 0 -5px  }
+.ow-rub .servis A       { float: left; color:  #E63E39; padding: 0 5px; margin: 0 }
+.ow-rub .servis .between    { float: left; width: 1px; height: 9px; font-size: 9px; color:  #E63E39; }
+
+.ow-rub UL      { padding-left: 130px; _padding-left: 140px; }
+
+.ow-rub .nfo        { font: 12px/17px Arial; color: #3AA8DA;  }
+.ow-rub .nfo2       { font: 1.0em Arial; color: #3AA8DA; }
+.ow-rub .prx        { margin: 3px 0; font: 14px/18px Arial; }
+
+.ow-rub UL      { margin: 10px 120px 0 110px; padding: 5px 0 0 0; border-top: 1px dotted #D3D3D3  }
+.ow-rub LI      { margin:  0 0 5px 0;  }
+.ow-rub LI A,
+.ow-rub LI A:visited    { color: #5F544E; font: 0.90em Arial  }
+
+/* rubrika
+
+
+/* rubrika move
+.ow-move    { float: right; padding-top: 30px; width: 510px;  }
+.ow-move, .ow-move A, .ow-move A:visited { color: #127BA5; line-height: 14px; }
+.ow-move .prev  { float: left; width: 150px; text-align: left; }
+.ow-move .prev IMG { float: left; }
+.ow-move .count { float: left; width: 150px; text-align: center; }
+.ow-move .next  { float: left; width: 150px; text-align: right; }
+.ow-move .next IMG { float: right; }
+
+.addthis_toolbox { width: auto; margin-top: 10px; }
+.otv .addthis_toolbox { clear: both; }
+
+.embed-gallery .animation { padding: 18px 18px 10px 18px; background: #2B2B2D; width: 601px; height: 391px; position: relative; overflow: hidden; }
+
+.embed-gallery A.mainlink { background: black; width: 600px; height: 341px; text-align: center; border-collapse: collapse; table-layout: fixed; display: table-cell; vertical-align: middle; *display: block; }
+.embed-gallery a.mainlink span { display: none; *display: inline-block; *height: 100%; }
+.embed-gallery a.mainlink * { vertical-align: middle; }
+
+.embed-gallery a.prev { z-index: 30; outline: 0; position: absolute; top: 167px; left: 11px; display: block; width: 53px; height: 54px; background:  url('/img/11_0/kulaty_posuvnik-r-neaktivni.png') no-repeat 0 0; }
+.embed-gallery a.next { z-index: 30; outline: 0; position: absolute; top: 167px; left: 556px; display: block; width: 53px; height: 54px; background:  url('/img/11_0/kulaty_posuvnik-l-neaktivni.png') no-repeat 0 0; }
+.embed-gallery a.prev:hover { background:  url('/img/11_0/kulaty_posuvnik-l-aktivni.png') no-repeat 0 0; }
+.embed-gallery a.next:hover { background:  url('/img/11_0/kulaty_posuvnik-r-aktivni.png') no-repeat 0 0; }
+.embed-gallery a.disabled-r:hover { background:  url('/img/11_0/kulaty_posuvnik-l-neaktivni.png') no-repeat 0 0; }
+.embed-gallery a.disabled-l:hover { background:  url('/img/11_0/kulaty_posuvnik-r-neaktivni.png') no-repeat 0 0; }
+.embed-gallery .thumbs { display: none; }
+
+.embed-gallery .info { position: absolute; bottom: 0; background: url("/img/11_0/title_opacity.png") repeat-x scroll 0 0 transparent; text-decoration: none; float: left; padding: 9px 0 0 0; width: 100%; color: #9D9D9F; font-size: 12px; }
+.embed-gallery .info .l { position: relative; padding: 0; width: 100%; margin: 0; sfloat: left; background: none; sbackground: url("/img/11_0/full.png") no-repeat right top; font: 12px/17px Arial; }
+.embed-gallery .info .r { padding: 0; margin: 0; width: 80px; float: left;  }
+.embed-gallery .info .count { margin: -2px 0 2px 8px; color: white; width: 80px; font-size: 12px; }
+.embed-gallery .info .thumb-author { margin: -2px 8px 2px 0; position: absolute; right: 0; }
+.embed-gallery .thumb-title { margin: 0 0 0 8px; height: 17px; overflow: hidden }
+.embed-gallery .info a.disabled { text-decoration: none; color: #575558; }
+
+.thumbs .fla { display: table; table-layout: fixed; }
+
+/*zamek
+H2.lock, A.lock { padding: 0 0 0 28px; background:  url('/img/11_0/hn-plus-mini.png') no-repeat top left; color: black!important; }
+/*zamek
+ */

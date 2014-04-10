@@ -13,6 +13,7 @@ httpServer = http.createServer (request, response) ->
     time = if request.url is "/index.html" then 1 else 5000
     # <~ setTimeout _, time
     (err, data) <~ fs.readFile "#__dirname/../www/#{request.url}"
+    (err, compressed) <~ zlib.gzip data
     if err
         response.writeHead 404
         response.end!
@@ -21,20 +22,19 @@ httpServer = http.createServer (request, response) ->
             "Cache-Control": "no-cache"
             "Pragma": "no-cache"
             "Content-Type": mime.lookup request.url
+            "Content-Encoding": "gzip"
 
-        if data.length > first_chunk
-            headers."Content-Encoding" = "gzip"
+        if request.url is "/index.html"
             response.writeHead 200, "ok", headers
-            (err, compressed) <~ zlib.gzip data
             d_chunk1 = compressed.slice 0, 2920
             d_chunk2 = compressed.slice 2920
             response.write d_chunk1
             <~ process.nextTick
             response.end d_chunk2
         else
-            headers."Content-Length" = data.length
+            headers."Content-Length" = compressed.length
             response.writeHead 200, "ok", headers
-            response.end data
+            response.end compressed
     # request.resume!
 
 <~ httpServer.listen 8080

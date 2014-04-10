@@ -21,15 +21,17 @@ httpServer = http.createServer (request, response) ->
             "Cache-Control": "no-cache"
             "Pragma": "no-cache"
             "Content-Type": mime.lookup request.url
-        headers."Content-Length" = data.length
+
         if data.length > first_chunk
             headers."Content-Encoding" = "gzip"
             response.writeHead 200, "ok", headers
             (err, compressed) <~ zlib.gzip data
+            headers."Content-Length" = compressed.length
             d_chunk1 = compressed.slice 0, first_chunk
             d_chunk2 = compressed.slice first_chunk
             response.end compressed
         else
+            headers."Content-Length" = data.length
             response.writeHead 200, "ok", headers
             response.end data
     # request.resume!

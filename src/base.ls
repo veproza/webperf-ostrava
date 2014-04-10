@@ -26,8 +26,8 @@ httpServer = http.createServer (request, response) ->
             headers."Content-Encoding" = "gzip"
             response.writeHead 200, "ok", headers
             (err, compressed) <~ zlib.gzip data
-            d_chunk1 = compressed.slice 0, first_chunk
-            d_chunk2 = compressed.slice first_chunk
+            d_chunk1 = compressed.slice 0, 4380
+            d_chunk2 = compressed.slice 4380
             response.write d_chunk1
             <~ process.nextTick
             response.end d_chunk2

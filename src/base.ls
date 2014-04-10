@@ -8,7 +8,7 @@ first_chunk = 11680_bytes
 httpServer = http.createServer (request, response) ->
     request.on \end ->
         console.log request.url
-        time = if request.url is "/index.html" then 1 else 5000
+        time = if request.url is "/index.html" then 1 else 1
         <~ setTimeout _, time
         (err, data) <~ fs.readFile "#__dirname/../www/#{request.url}"
         if err
@@ -28,7 +28,7 @@ httpServer = http.createServer (request, response) ->
                 d_chunk2 = compressed.slice first_chunk
                 console.log "Chunk 1"
                 response.write d_chunk1
-                <~ setTimeout _, 2000
+                <~ setTimeout _, 1
                 console.log "Chunk 2"
                 response.end d_chunk2
             else

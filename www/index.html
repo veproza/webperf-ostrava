@@ -3,10 +3,23 @@
     <head>
         <title>Test</title>
         <style>body {background: red}</style>
-        <style>
-            @import url("./style1.css");
-            @import url("./style2.css");
-        </style>
+        <noscript>
+            <link rel="stylesheet" href="./style1.css">
+            <link rel="stylesheet" href="./style2.css">
+        </noscript>
+        <script>
+            setTimeout(function() {
+                var h = document.getElementsByTagName('head')[0];
+                var ss1 = document.createElement("link");
+                ss1.rel = "stylesheet";
+                ss1.href = "./style1.css";
+                var ss2 = document.createElement("link");
+                ss2.rel = "stylesheet";
+                ss2.href = "./style2.css";
+                h.appendChild(ss1);
+                h.appendChild(ss2);
+            }, 0);
+        </script>
     </head>
     <body>
         Nothing yet<br />

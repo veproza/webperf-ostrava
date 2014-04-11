@@ -9,10 +9,9 @@ matches = {}
     if -1 < content.indexOf "ajax.googleapis.com"
         m = content.match /ajax.googleapis.com([^"']+)/g
         for mm in m
-            matches[mm] ?= 0
-            matches[mm]++
+            matches[mm] ?= []
+            matches[mm].push file
         hit++
     cb!
-for addr, count of matches
-    console.log "#addr\t#count"
-
+for addr, sites of matches
+    console.log "#addr\t#{sites.length}\t#{sites.join ', '}"

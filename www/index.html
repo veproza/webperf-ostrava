@@ -17,6 +17,9 @@
             var ss1 = document.createElement("link");
             ss1.rel = "stylesheet";
             ss1.href = "./style1.css";
+            ss1.onload = function() {
+                t["CSS"] = (Date.now() - t0)
+            }
             h.appendChild(ss1);
         }, 1);
         </script>

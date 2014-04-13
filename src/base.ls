@@ -13,7 +13,13 @@ httpServer = http.createServer (request, response) ->
     (err, data) <~ fs.readFile "#__dirname/../www/#{request.url}"
     if err
         response.writeHead 404
-        response.end!
+        if sys = request.url == "/test.png"
+            console.log "STBY"
+            <~ setTimeout _, 5000
+            console.log "DUNN"
+            response.end!
+        else
+            response.end!
     else
         (err, compressed) <~ zlib.gzip data
         headers =

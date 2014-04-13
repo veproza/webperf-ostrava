@@ -27,6 +27,7 @@ httpServer = http.createServer (request, response) ->
             "Pragma": "no-cache"
             "Content-Type": mime.lookup request.url
             "Content-Encoding": "gzip"
+            "Connection": "close"
 
         if "/index_chunked.html" is request.url
             response.writeHead 200, "ok", headers

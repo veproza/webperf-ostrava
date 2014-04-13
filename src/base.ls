@@ -36,7 +36,6 @@ httpServer = http.createServer (request, response) ->
             <~ process.nextTick
             response.end d_chunk2
         else
-            <~ setTimeout _, 2000
             headers."Content-Length" = compressed.length
             response.writeHead 200, "ok", headers
             response.end compressed

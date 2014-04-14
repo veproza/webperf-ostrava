@@ -22,12 +22,17 @@ httpServer = http.createServer (request, response) ->
             response.end!
     else
         (err, compressed) <~ zlib.gzip data
+        time =
+            | "/index" is request.url.substr 0, 6 => 2000
+            | otherwise => 1
+        <~ setTimeout _, time
+        console.log "Sent #{request.url}"
+        ex = new Date()
+            ..setTime Date.now! + 3000
         headers =
-            "Cache-Control": "no-cache"
-            "Pragma": "no-cache"
             "Content-Type": mime.lookup request.url
             "Content-Encoding": "gzip"
-            "Connection": "close"
+            "Expires": ex.toUTCString!
 
         if "/index_chunked.html" is request.url
             response.writeHead 200, "ok", headers

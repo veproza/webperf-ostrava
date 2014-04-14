@@ -14,6 +14,22 @@
         <script>t["Post-header"] = (Date.now() - t0)</script>
     </head>
     <body>
+        <div class="links">
+            <a href="./index_async_css.html">Async CSS</a>
+            <a href="./index_js_on_end.html">JS-on-end</a>
+            <a href="./index_worst.html">Worst Case</a>
+        </div>
+        <script>
+            var links = document.querySelectorAll(".links a"),
+                link,
+                xhrObj;
+            for(var i = 0; i < links.length; ++i) {
+                link = links[i];
+                xhrObj = new XMLHttpRequest();
+                xhrObj.open('GET', link.getAttribute('href'));
+                xhrObj.send();
+            }
+        </script>
         <div class="paras">
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sagittis mauris. Sed sapien nibh, sodales sit amet ligula accumsan, porta euismod justo. Cras quis imperdiet diam, ac facilisis ante. In commodo tempus elementum. Nam vel lectus mollis, interdum ligula et, gravida diam. Sed congue metus dapibus arcu dapibus porttitor. Aliquam egestas, ipsum ut fringilla tincidunt, sem sapien tincidunt lectus, et euismod ipsum risus ac sapien. Donec porta volutpat urna et tincidunt. Mauris pretium diam id turpis scelerisque, ut consequat ipsum ultrices. Nunc in rhoncus dui, sit amet vulputate lacus. Suspendisse commodo odio vitae rutrum sollicitudin. Duis malesuada tincidunt massa, pretium fermentum nibh facilisis vel. Fusce eget justo non magna rutrum fringilla a eu metus. Nullam orci nisl, placerat vitae hendrerit auctor, ullamcorper a enim. Praesent interdum vestibulum neque id scelerisque.
